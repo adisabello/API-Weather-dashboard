@@ -20,7 +20,7 @@ h1,h2,h3{
 }
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 .left{
     width: 300px;
