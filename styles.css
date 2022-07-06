@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body, html{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    background-image: linear-gradient(blue, darkblue);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+h1,h2,h3{
+    font-weight: bold;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.left{
+    width: 300px;
+    height: calc(100% - 100px);
+    padding: 10px 0;
+    margin-top: 10px;
+}
+#search-btn{
+    color: white;
+    background-color: skyblue;
+}
+.left *{
+    width: 280px;
+    padding: 10px;
+    margin: 5px 0;
+}
+.left input{
+    width: 257px;
+}
+.divider{
+    height: 1px;
+    background-color: grey;
+    padding: 0px;
+}
+.left button{
+    border: none;
+    border-radius: 7px;
+}
+.right{
+    width: calc(100% - 340px);
+    height: calc(100% - 100px);
+    padding: 10px;
+    margin-top: 10px;
+}
+.top{
+    border: solid 1px grey;
+    padding: 5px;
+}
+#days{
+    display: flex;
+    justify-content: center;
+}
+.day{
+    background-color: midnightblue;
+    color: white;
+    width: 180px;
+    padding: 7px;
+    margin: 20px;
+    margin-left: 0px;
+}
+p,h3{
+    line-height: 30px;
+}
+#uv{
+    color: white;
+    padding: 2px;
+    font-size: 10pt;
+    border-radius: 3px;
+}

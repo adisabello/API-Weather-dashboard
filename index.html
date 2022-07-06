@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Weather API</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class='header'><h1>Weather Dashboard</h1></div>
+    <div class="container">
+        <div class='left'>
+            <h2>Search for a City:</h2>
+            <input type="text" id='city'>
+            <button id="search-btn" onclick="fetchWeather()">Search</button>
+            <div class="divider"></div>
+            <div id='history'>
+
+            </div>
+        </div>
+        <div class='right'>
+            <div class="top">
+                <h2 id='name'>Atlanta (3/30/2021)</h2>
+                <p id='temp'>Temp: 74.01°F</p>
+                <p id='wind'>Wind: 6.67 MPH</p>
+                <p id='humidity'>Humidity: 46 %</p>
+                <p id='uvIndex'>UV Index: <span id='uv'></span></p>
+            </div>
+            <div class="bottom">
+                <h2>5-Day Forecast:</h2>
+                <div id="days">
+                    <div class="day">
+                        <h3>3/31/2021</h3>
+                        <p><span>Icon</span></p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66 %</p>
+                    </div>
+                    <div class="day">
+                        <h3>3/31/2021</h3>
+                        <p><span>Icon</span></p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66 %</p>
+                    </div>
+                    <div class="day">
+                        <h3>3/31/2021</h3>
+                        <p><span>Icon</span></p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66 %</p>
+                    </div>
+                    <div class="day">
+                        <h3>3/31/2021</h3>
+                        <p><span>Icon</span></p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66 %</p>
+                    </div>
+                    <div class="day">
+                        <h3>3/31/2021</h3>
+                        <p><span>Icon</span></p>
+                        <p>Temp: 73.72°F</p>
+                        <p>Wind: 9.53 MPH</p>
+                        <p>Humidity: 66 %</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
