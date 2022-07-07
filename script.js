@@ -3,7 +3,7 @@ async function fetchWeather(){
     let key = 'dfd4fc193c8f9502c6db77512ad1a571';
     let loc = await getLocation(city, key);
 
-    let url = 'http://api.openweathermap.org/data/2.5/onecall?lat='+loc.lat+'&lon='+loc.lon+'&appid='+key+'&units=metric&lang=en';
+    let url = 'https://api.openweathermap.org/data/2.5/onecall?lat='+loc.lat+'&lon='+loc.lon+'&appid='+key+'&units=metric&lang=en';
 
     fetch(url)
     .then(resp=>{
@@ -39,9 +39,9 @@ function saveData(city, data){
 }
 
 async function getLocation(city, key){
-    let url = 'http://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+key;
+    let url = 'https://api.openweathermap.org/data/2.5/weather?q='+city+'&appid='+key;
     let resp = await fetch(url);
-    resp = await resp.json();
+    resp = await resp.json(); 
 
     loc = resp.coord;
     return loc;
